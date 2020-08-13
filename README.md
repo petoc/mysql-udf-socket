@@ -55,7 +55,7 @@ echo -ne "OK" | netcat -lp 8080 -q 1
 UNIX domain socket.
 
 ```sh
-socat -v UNIX-LISTEN:/tmp/test_socket.sock,mode=777,reuseaddr EXEC:"echo -n OK"
+socat -v UNIX-LISTEN:/tmp/test.sock,mode=777,reuseaddr EXEC:"echo -n OK"
 ```
 
 ## License
